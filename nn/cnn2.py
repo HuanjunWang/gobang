@@ -43,6 +43,6 @@ if __name__ == '__main__':
     input_shape = x_train.shape[1:]
     cnn = make_model(input_shape, num_classes)
 
-    cnn.fit(x_train, y_train, epochs=1, batch_size=128)
+    cnn.fit(x_train, y_train, epochs=10, batch_size=128)
     loss, acc = cnn.evaluate(x_test, y_test)
     print("Evaluation Loss:", loss, " Acc:", acc)

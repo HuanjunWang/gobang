@@ -41,6 +41,6 @@ if __name__ == '__main__':
     input_shape = x_train.shape[1:]
     nn = make_model(input_shape, num_classes)
 
-    nn.fit(x_train, y_train, epochs=5, batch_size=128)
+    nn.fit(x_train, y_train, epochs=10, batch_size=128)
     loss, acc = nn.evaluate(x_test, y_test)
     print("Evaluation Loss:", loss, " Acc:", acc)
